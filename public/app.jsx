@@ -17,12 +17,12 @@ var Greeter = React.createClass({
   onButtonClick: function (e) {
     e.preventDefault();
     var name = this.refs.name.value;
+    this.refs.name.value = '';
 
     this.setState({
       name: name
     });
 
-    alert(name);
   },
 
   render: function () {
