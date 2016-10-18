@@ -1,5 +1,12 @@
 
 var Greeter = React.createClass({
+
+  getDefaultProps: function () {
+    return {
+      name: "React's default prop for name"
+    };
+  },
+
   render: function () {
     var name = this.props.name;
 
@@ -13,6 +20,6 @@ var Greeter = React.createClass({
 });
 
 ReactDOM.render(
-  <Greeter name="Justin"/>,
+  <Greeter />,
   document.getElementById('app')
 );
