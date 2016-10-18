@@ -19,11 +19,14 @@ var Greeter = React.createClass({
     var name = this.refs.name.value;
     this.refs.name.value = '';
 
-    this.setState({
-      name: name
-    });
+    if (typeof name === 'string' && name.length > 0) {
+      this.setState({
+        name: name
+      });
+    };
 
   },
+
 
   render: function () {
     var name = this.state.name;
