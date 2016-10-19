@@ -42,13 +42,22 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var greeter = __webpack_require__(1);
+
+	greeter();
+
+
+/***/ },
+/* 1 */
 /***/ function(module, exports) {
 
 	function greeter () {
-	  document.write("From greeter function");
+	  document.write("From greeter function!");
 	}
 
-	greeter();
+	module.exports = greeter;
 
 
 /***/ }
