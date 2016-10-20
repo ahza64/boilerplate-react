@@ -1,12 +1,13 @@
 {
-  "name": "hello-react",
+  "name": "boilerplate-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "boilerplate for react",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "Justin",
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
@@ -19,5 +20,13 @@
     "babel-preset-es2015": "^6.16.0",
     "babel-preset-react": "^6.16.0",
     "webpack": "^1.13.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahza64/boilerplate-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ahza64/boilerplate-react/issues"
+  },
+  "homepage": "https://github.com/ahza64/boilerplate-react#readme"
 }
